@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-connecttranslateblog-dev-150646-authRole",
+      "UnauthRoleArn": "arn:aws:iam::525329561794:role/amplify-connecttranslateblog-dev-150646-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::525329561794:role/amplify-connecttranslateblog-dev-150646-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-connecttranslateblog-dev-150646-deployment",
+      "UnauthRoleName": "amplify-connecttranslateblog-dev-150646-unauthRole",
+      "StackName": "amplify-connecttranslateblog-dev-150646",
+      "StackId": "arn:aws:cloudformation:us-east-1:525329561794:stack/amplify-connecttranslateblog-dev-150646/cee7c3f0-c5fc-11ee-87fc-0a25f66735a3",
+      "AmplifyAppId": "d2csm8ew11qo1j"
+    },
+    "categories": {
+      "auth": {
+        "connecttranslateblog690eb6d1": {}
+      },
+      "function": {
+        "amazonTranslateLambda": {},
+        "postInstallScript": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2csm8ew11qo1j",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

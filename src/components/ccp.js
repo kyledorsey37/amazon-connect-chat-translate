@@ -188,6 +188,7 @@ const Ccp = () => {
     // Loading CCP
     // *****
     useEffect(() => {
+        console.log('instance_id: ' + process.env.REACT_APP_CONNECT_INSTANCE_URL)
         const connectUrl = process.env.REACT_APP_CONNECT_INSTANCE_URL;
         window.connect.agentApp.initApp(
             "ccp",

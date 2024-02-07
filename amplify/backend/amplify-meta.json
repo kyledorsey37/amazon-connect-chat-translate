@@ -1,4 +1,17 @@
 {
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-connecttranslateblog-dev-150646-authRole",
+      "UnauthRoleArn": "arn:aws:iam::525329561794:role/amplify-connecttranslateblog-dev-150646-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::525329561794:role/amplify-connecttranslateblog-dev-150646-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-connecttranslateblog-dev-150646-deployment",
+      "UnauthRoleName": "amplify-connecttranslateblog-dev-150646-unauthRole",
+      "StackName": "amplify-connecttranslateblog-dev-150646",
+      "StackId": "arn:aws:cloudformation:us-east-1:525329561794:stack/amplify-connecttranslateblog-dev-150646/cee7c3f0-c5fc-11ee-87fc-0a25f66735a3",
+      "AmplifyAppId": "d2csm8ew11qo1j"
+    }
+  },
   "api": {
     "amazonTranslateAPI": {
       "dependsOn": [
@@ -25,8 +38,8 @@
           "SMS"
         ],
         "passwordProtectionSettings": {
-          "passwordPolicyCharacters": [],
-          "passwordPolicyMinLength": 8
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
         },
         "signupAttributes": [
           "EMAIL"
@@ -81,24 +94,6 @@
       "providerPlugin": "awscloudformation",
       "service": "amplifyhosting",
       "type": "manual"
-    }
-  },
-  "parameters": {
-    "AMPLIFY_hosting_amplifyhosting_appId": {
-      "usedBy": [
-        {
-          "category": "hosting",
-          "resourceName": "amplifyhosting"
-        }
-      ]
-    },
-    "AMPLIFY_hosting_amplifyhosting_type": {
-      "usedBy": [
-        {
-          "category": "hosting",
-          "resourceName": "amplifyhosting"
-        }
-      ]
     }
   },
   "predictions": {
