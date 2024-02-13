@@ -3,7 +3,6 @@
   padding-top: 15px;
   padding-left: 15px;
   width: 330px;
-  display: none;
 }
 
 .ui.toggle.checkbox input:checked ~ .box:before,
