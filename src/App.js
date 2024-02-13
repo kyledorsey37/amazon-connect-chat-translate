@@ -11,7 +11,7 @@ import 'semantic-ui-less/semantic.less';
 import Ccp from "./components/ccp";
 import Chat from "./components/chat";
 
-Auth.configure(awsconfig);
+//Auth.configure(awsconfig);
 
 class App extends Component {
        componentDidMount() {
@@ -39,4 +39,5 @@ class App extends Component {
        }
 }
 
-export default withAuthenticator(App)
+//export default withAuthenticator(App)
+export default App
