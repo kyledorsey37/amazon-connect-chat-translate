@@ -196,6 +196,10 @@ const Ccp = () => {
             connectUrl + "/connect/ccp-v2/", { 
                 ccpParams: { 
                     region: process.env.REACT_APP_CONNECT_REGION,
+                    loginOptions: {                 // optional, if provided opens login in new window
+                        autoClose: true
+                    },
+                    loginPopupAutoClose: true,
                     pageOptions: {                  // optional
                         enableAudioDeviceSettings: true, // optional, defaults to 'false'
                         enablePhoneTypeSettings: true // optional, defaults to 'true'
@@ -205,7 +209,7 @@ const Ccp = () => {
         );
         subscribeConnectEvents();
     }, []);
-
+    
 
     return (
         <main>
