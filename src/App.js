@@ -14,6 +14,7 @@ import Chat from "./components/chat";
 Auth.configure(awsconfig);
 
 class App extends Component {
+    
        componentDidMount() {
               // Initialize the Amazon Connect App SDK here
               const { connectApp } = AmazonConnectApp.init({
@@ -31,11 +32,17 @@ class App extends Component {
               // this.setState({ connectApp });
           }
        render() {
-              return (
-                     <div className="App">
-                        <Ccp />
-                     </div>
+        const hostname = window.location.hostname;
+        if (hostname === "boleskidorseyenergy.com") {
+            return (
+                <div className="App">
+                  <Ccp />
+                </div>
               );
+          } else {
+            // Blocked
+            return <div>This site is not available. Please navigate to https://boleskidorseyenergy.com</div>;
+          }
        }
 }
 
