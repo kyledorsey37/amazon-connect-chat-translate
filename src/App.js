@@ -33,6 +33,7 @@ class App extends Component {
           }
        render() {
         const hostname = window.location.hostname;
+        console.log("hostname: " + hostname)
         if (hostname === "boleskidorseyenergy.com") {
             return (
                 <div className="App">
